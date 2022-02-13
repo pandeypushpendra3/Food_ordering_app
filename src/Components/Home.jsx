@@ -1,12 +1,17 @@
 import React from 'react'
-import {banner} from "../assets/banner.jpeg"
+import photo from "../assets/photo.jpeg"
+import {Link} from "react-router-dom";
+import "./Home.css"
 export const Home = () => {
   return (
   <>
-      <div className="home">
+      <div className="home" style={{backgroundImage:`url(${photo})`}}>
           <div className="headerContainer">
-              <img/>
-
+              <h1>Food Corner</h1>
+              <p>Indian Food at a click</p>
+              <Link to="">
+              <button>Order Now</button>
+              </Link>
           </div>
       </div>
   </>
