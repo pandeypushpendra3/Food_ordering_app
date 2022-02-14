@@ -6,6 +6,7 @@ import {Home} from "./Components/Home";
 import {Footer} from "./Components/Footer";
 import {Menu} from "./Components/Menu";
 import {About } from "./Components/About";
+import {Contact} from "./Components/Contact";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,10 @@ function App() {
        <Route exact path="/about" >
        <About/>
        </Route>
+       <Route exact path="/contact" >
+       <Contact/>
+       </Route>
+
      </Switch>
      <Footer/>
      </Router>
